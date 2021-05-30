@@ -11,8 +11,8 @@
 	<groupId>com.boso</groupId>
 	<artifactId>calculator-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>calculator-api</name>
-	<description>Rest calculator api</description>
+	<name>person-api</name>
+	<description>Rest person api</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
