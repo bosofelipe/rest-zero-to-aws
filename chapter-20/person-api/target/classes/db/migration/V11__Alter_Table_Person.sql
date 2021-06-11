@@ -1,0 +1,1 @@
+alter table person add enabled boolean not null default true;
