@@ -13,7 +13,7 @@ deploy:
     docker push bosofelipe/mysql-rest-with-spring-boot-udemy;
     docker push bosofelipe/rest-with-spring-boot-udemy;
   on:
-    branch: master
+    branch: main
 notifications:
   email: false
 
