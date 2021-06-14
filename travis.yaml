@@ -1,0 +1,21 @@
+language: bash
+services: docker
+before_install: 
+  - cd chapter-21/
+  - echo "We are in the docker folder!"
+script: 
+  - docker-compose build
+before_deploy:
+  - echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --passoword-stdin
+deploy:
+  provider: script
+  script: 
+    docker push bosofelipe/mysql-rest-with-spring-boot-udemy;
+    docker push bosofelipe/rest-with-spring-boot-udemy;
+  on:
+    branch: master
+notifications:
+  email: false
+
+
+
