@@ -34,8 +34,8 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
   }
 
   private ApiInfo apiInfo() {
-    return new ApiInfo("Restfull API AWS and Docker",
-        "API Course",
+    return new ApiInfo("AWS Spring boot",
+        "Person API",
         "v1",
         "Terms of service URL",
         new Contact("Felipe Boso", "www.bosoti.com.br", "felipethiagoboso@gmail.com"),
