@@ -24,7 +24,7 @@ deploy:
     docker tag rest-with-spring-boot-udemy:latest bosofelipe/rest-with-spring-boot-udemy:$TRAVIS_JOB_ID;
     docker push bosofelipe/rest-with-spring-boot-udemy:$TRAVIS_JOB_ID;
   on:
-    branch: master
+    branch: main
 after_success:
   - sudo apt-get -y install python3-pip python-dev
   - sudo pip3 install -U setuptools
